@@ -1,0 +1,13 @@
+- hosts: all
+  tasks:
+    - copy:
+        src: /opt/
+        dest: /public/
+    - name: copy
+      shell: docker rmi -f hero
+    - name: copy
+      shell: docker rm -f ban
+    - name: copy
+      shell: docker build -t hero .
+    - name: copy
+      shell: docker run -it  --name ban -d -p 80:80 hero
