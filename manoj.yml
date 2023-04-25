@@ -10,4 +10,4 @@
     - name: copy
       shell: docker build -t hero /public/
     - name: copy
-      shell: docker run -it  --name ban -d -p 80:80 hero
+      shell: docker run -it --name ban -d -p 80:80 hero
